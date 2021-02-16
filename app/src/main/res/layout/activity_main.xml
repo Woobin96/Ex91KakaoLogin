@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<!--    카카오 로그인 버튼 -->
+    <ImageButton
+        android:id="@+id/vtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/kakao_login_medium_wide"
+        android:backgroundTint="@android:color/transparent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:onClick="clickLogin"/>
+
+    <TextView
+        android:id="@+id/tv_nic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="닉네임"
+        android:textColor="#FF333333"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이메일"
+        android:layout_below="@id/tv_nic"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="8dp"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        android:layout_above="@id/tv_nic"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"/>
+
+<!--    로그아웃 버튼-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/vtn"
+        android:text="로그아웃"
+        android:textColor="#FF333333"
+        android:layout_margin="4dp"
+        android:backgroundTint="#175C2929"
+        android:onClick="clickLogout"/>
+
+
+
+</RelativeLayout>
